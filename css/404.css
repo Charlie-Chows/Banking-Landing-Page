@@ -1,0 +1,98 @@
+/* 404 Page Styles */
+.error-page {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(160deg, #f8fafc 0%, #eef2f7 100%);
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.error-container {
+    max-width: 520px;
+}
+
+.error-code {
+    font-family: var(--font-display);
+    font-size: clamp(5rem, 12vw, 9rem);
+    font-weight: 700;
+    color: var(--primary);
+    line-height: 1;
+    letter-spacing: -0.04em;
+    margin-bottom: 8px;
+}
+
+.error-code span {
+    color: var(--secondary);
+}
+
+.error-divider {
+    width: 60px;
+    height: 3px;
+    background: var(--secondary);
+    border-radius: 3px;
+    margin: 0 auto 24px;
+}
+
+.error-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 12px;
+}
+
+.error-message {
+    color: var(--text-light);
+    line-height: 1.7;
+    margin-bottom: 32px;
+    font-size: 1rem;
+}
+
+.error-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 14px 32px;
+    background: var(--primary);
+    color: var(--white);
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: all var(--transition-smooth);
+    box-shadow: 0 4px 16px rgba(10, 30, 61, 0.25);
+}
+
+.error-btn:hover {
+    background: var(--secondary);
+    color: var(--primary);
+    box-shadow: 0 8px 28px rgba(201, 168, 76, 0.4);
+    transform: translateY(-3px);
+}
+
+.error-illustration {
+    margin-bottom: 30px;
+    position: relative;
+    display: inline-block;
+}
+
+.error-circle {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px dashed var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    animation: spin-slow 20s linear infinite;
+}
+
+@keyframes spin-slow {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
